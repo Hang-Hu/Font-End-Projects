@@ -1,0 +1,21 @@
+table {
+	text-align: center;
+	margin: auto;
+}
+
+td img {
+	width: 300px;
+	display: block;
+}
+
+td {
+	border: 1px gray solid;
+}
+
+h1 {
+	text-align: center;
+}
+
+a:hover {
+
+}
