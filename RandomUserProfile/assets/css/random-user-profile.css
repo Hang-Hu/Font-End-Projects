@@ -1,0 +1,74 @@
+body {
+	background-color: #ECF0F1;
+}
+h1 {
+	text-align: center;
+	text-transform: capitalize;
+}
+
+div {
+	width: 50%;
+	margin: 30px auto;
+	background-color: white;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+img {
+	display: inline-block;
+	border-radius: 50%;
+	width: 26%;
+	margin: 0;
+}
+
+#user {
+	padding: 20px;
+	margin-bottom: 0;
+}
+
+#info {
+	display: inline-block;
+	width: 73%;
+	padding-left: 10%;
+	margin: 0;
+}
+.block {
+	display: block;
+}
+
+
+#name {
+	text-transform: capitalize;
+	color: #16A085;
+	font-size: 2em;
+	font-weight: bold;
+}
+
+#username{
+	color: #468EBE;
+}
+
+span.block:nth-of-type(2) {
+	margin-bottom: 20px;
+}
+
+#city {
+	text-transform: capitalize;
+}
+
+button {
+	display: block;
+	margin: auto;
+	background-color: #16A085;
+	border: none;
+	width: 50%;
+	padding: 2%;
+	font-size: 2em;
+	color: white;
+	text-transform: capitalize;
+}
+
+button:disabled {
+	cursor: wait;
+}

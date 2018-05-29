@@ -1,0 +1,80 @@
+body {
+	text-transform: uppercase;
+	margin: 0;/*use margin 0 to remove white stripe*/
+	background-color: #201F20;/*use body to have black color to remove white block under palette*/
+}
+
+h1 {
+	font-size: 4rem;
+	margin: 0;
+}
+
+#title > span {
+	font-size: 20px;
+}
+
+#title {
+	background-color: steelblue;
+	text-align: center;
+	margin-bottom: 0;
+	color: white;
+	padding: 20px 0;
+}
+
+#stripe {
+	text-align: center;
+	height: 30px;
+	font-size: 1.3rem;
+	background-color: white;
+}
+#message {
+	display: inline-block;
+	width: 25%;
+}
+
+#stripe > button{
+	height: 100%;
+	border: none;
+	background: white;
+	color: steelblue;
+	font-weight: bold;
+	letter-spacing: .1rem;
+	text-transform: uppercase;
+	outline: none;
+	transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+
+}
+
+#stripe > button:hover,
+#stripe > button.difficulty-selected{
+	background-color: steelblue;
+	color: white;
+}
+
+
+#palette{
+	padding-top: 20px;
+	max-width: 600px;
+	margin: auto;/*centralize inner boxes*/
+}
+#palette > div {
+	/*display: inline-block;*/
+	width: 30%;/*30% of browser width*/
+	float: left;/*make div a inline element, remove white space between boxes */
+	padding: 15% 0;/*top 15% + bottom 15% = 30%*/
+	margin: 1.5%;
+	border-radius: 20%;
+}
+
+.transition-effect {
+	transition-duration: 0.6s;
+	transition-property: background;
+	-webkit-transition: background 0.6s;
+	-moz-transition: background 0.6s;
+	-o-transition: background 0.6s;
+	-ms-transition: background 0.6s;
+}

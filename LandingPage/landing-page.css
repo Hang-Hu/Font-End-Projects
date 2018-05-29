@@ -1,0 +1,35 @@
+#landing {
+	padding: 18%;
+	/*margin-top: 70px;*/
+	background-image: url(https://images.unsplash.com/photo-1522198684868-88edd8463fc9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=19e6b72e6556179d4644fc3830a1ce85&auto=format&fit=crop&w=1050&q=80);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+	text-transform: capitalize;
+	color: white;
+	text-align: center;
+	text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+				 0px 8px 13px rgba(0,0,0,0.1),
+				 0px 18px 23px rgba(0,0,0,0.1);
+}
+
+#landing h1 {
+	font-size: 5em;
+	font-weight: 700;
+}
+
+
+#caption {
+	/*margin-bottom: 2em;*/
+}
+
+body {
+	font-family: "Source Sans Pro";
+}
+
+hr {
+	width: 400px;
+	border-top: solid 1px #f8f8f8;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2)
+}

@@ -1,0 +1,17 @@
+img {
+    display: block;
+	margin: auto;
+}
+/*
+div {
+	text-align: center;
+}*/
+p {
+	/*color: red;*/
+    /*display: block;*/
+	font-size: 30px;
+	font-family: "Source Sans Pro";
+	font-weight: 700;
+	text-align: center;
+	text-transform: uppercase;
+}
