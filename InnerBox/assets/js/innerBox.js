@@ -4,17 +4,16 @@ var redBox;
 var greenBox;
 var distanceDisplay;
 var gBBorder;
-var hintDialog;
+var dialogDisplay;
 var dialogOKButton;
 function init(){
 	redBox = document.querySelector("#redBox");
 	greenBox = document.querySelector("#greenBox");
 	distanceDisplay = document.querySelector("#distance");
-	hintDialog = document.querySelector("dialog");
-	dialogOKButton = document.querySelector("dialog button")
+	dialogDisplay = document.querySelector("#dialog");
+	dialogOKButton = document.querySelector("#dialog button")
 	gBBorder = pxstringToNumber(getComputedStyle(greenBox).borderWidth);//remove px
 	distanceDisplay.textContent = calcDistance();
-	hintDialog.showModal();
 	installEventListeners();
 }
 function installEventListeners(){
@@ -30,8 +29,7 @@ function installEventListeners(){
 		if(eventObj.which === 1){
 			console.log(eventObj);
 			//startDragging
-			greenBox.style.position = "";
-
+			document.body.classList.add("grabbing");
 			window.addEventListener("mousemove", handleGreenBoxMouseMove);
 			//stopDragging
 			window.addEventListener("mouseup", handleGreenBoxMouseUp);
@@ -39,7 +37,7 @@ function installEventListeners(){
 		}
 	});
 	dialogOKButton.addEventListener("click", function(){
-		hintDialog.close();
+		dialogDisplay.style.display = "none";
 	});
 }
 function handleGreenBoxMouseMove(mousemoveEventObj){
@@ -106,6 +104,7 @@ function handleGreenBoxMouseUp(eventObj){
 		console.log(eventObj);
 		window.removeEventListener("mousemove", handleGreenBoxMouseMove);
 		window.removeEventListener("mouseup", handleGreenBoxMouseUp);
+		document.body.classList.remove("grabbing");
 	}
 }
 function insideRedBox(x, y){

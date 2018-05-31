@@ -1,19 +1,23 @@
+body {
+	background-color: #cccccc;
+}
 #redBox {
-	border: black solid 2px;
+	/*border: #4878AB solid 2px;*/
 	width: 500px;
 	height: 500px;
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
-	background-color: red;
+	background-color: #cc0033;
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	z-index: 0;
 }
 #greenBox {
-	background-color: green;
-	border: 2px black solid;
+	background-color:  #34C3A7;
+	/*border: 2px #4878AB solid;*/
 	width: 50px;
 	height: 50px;
 	box-sizing: border-box;
@@ -33,17 +37,53 @@
 	-moz-user-select: none;
 	-webkit-user-select: none;
 	-ms-user-select: none;
+	font-size: 2em;
+	font-weight: bold;
+	color: white;
 }
 #greenBox:hover {
-	background-color: LightGreen;
+	background-color:  #66ff99;
 	cursor: grab;
 	cursor: -moz-grab;
 	cursor: -webkit-grab;
 }
-dialog {
+#dialog {
 	user-select: none;
 	-moz-user-select: none;
 	-webkit-user-select: none;
 	-ms-user-select: none;
 	text-align: center;
+	border: none;
+	background-color: #34C3A7;
+	font-weight: bold;
+	padding: 0;
+	color: white;
+	position: absolute;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: block;
+	z-index: 1;
+}
+
+#dialog button {
+	display: block;
+	width: 100%;
+	outline: none;
+	background-color: #4878AB;
+	border: none;
+	padding: 2% 3%;
+	color: white;
+	font-size: 1.7em;
+	text-transform: uppercase;
+}
+#dialog p {
+	font-size: 1.4em;
+	margin: 4% 3%;
+	font-weight: bold;
+}
+.grabbing, .grabbing * {
+	cursor: grabbing; 
+	cursor: -moz-grabbing;
+	cursor: -webkit-grabbing;
 }
