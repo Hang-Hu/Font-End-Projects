@@ -1,0 +1,49 @@
+#redBox {
+	border: black solid 2px;
+	width: 500px;
+	height: 500px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	background-color: red;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+#greenBox {
+	background-color: green;
+	border: 2px black solid;
+	width: 50px;
+	height: 50px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+#distance {
+	text-align: center;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+#greenBox:hover {
+	background-color: LightGreen;
+	cursor: grab;
+	cursor: -moz-grab;
+	cursor: -webkit-grab;
+}
+dialog {
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	text-align: center;
+}
