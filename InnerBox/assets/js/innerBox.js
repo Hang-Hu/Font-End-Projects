@@ -107,6 +107,7 @@ function handleGreenBoxMouseUp(eventObj){
 		document.body.classList.remove("grabbing");
 	}
 }
+
 function insideRedBox(x, y){
 	if(xIsOutside(x) && yIsOutSide(y)){
 		return "bothOutside";
